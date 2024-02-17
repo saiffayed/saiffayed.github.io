@@ -17,7 +17,8 @@ let y3 = -1;
 let colors = {
     "red": vec4(1.0, 0.0, 0.0, 1.0),
     "green": vec4(0.0, 1.0, 0.0, 1.0),
-    "blue": vec4(0.0, 0.0, 1.0, 1.0)
+    "blue": vec4(0.0, 0.0, 1.0, 1.0),
+    "hot pink": vec4(1.0, 0.41, 0.71, 1.0)
 };
 
 function init()

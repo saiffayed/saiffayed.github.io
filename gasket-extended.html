@@ -31,22 +31,27 @@ void main()
 </head>
 
 <body>
+    <div>
+        1. Choose Color:
+        <input type="radio" name="color" value="red" checked> Red
+        <input type="radio" name="color" value="green"> Green
+        <input type="radio" name="color" value="blue"> Blue
+        <input type="radio" name="color" value="hot pink"> Pink
+    </div>
+    
 <div>
-    Recursive steps: 0 <input id="slider" type="range" min="0" max="6" step="1" value="0" /> 6
+    2. Choose Recursive steps: 0 <input id="slider" type="range" min="0" max="6" step="1" value="0" /> 6
 </div>
 
 <div>
-    Vertex:
+    3. Choose Vertex:
     <input type="radio" name="vertex" value="0" checked> 0
     <input type="radio" name="vertex" value="1"> 1
     <input type="radio" name="vertex" value="2"> 2
 </div>
 
 <div>
-    Color:
-    <input type="radio" name="color" value="red" checked> Red
-    <input type="radio" name="color" value="green"> Green
-    <input type="radio" name="color" value="blue"> Blue
+    4. Click Around! Change the parameters, and try different shapes.
 </div>
 
 <canvas id="gl-canvas" width="512" height="512">
