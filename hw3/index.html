@@ -20,7 +20,7 @@
         <script type="module">
         import * as THREE from 'three';
         const scene = new THREE.Scene();
-        const Phaser = window.Phaser;
+        
 
         let boxes = [];
 
@@ -40,7 +40,7 @@
         const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
         const material = new THREE.MeshBasicMaterial({ color: 0xffff00 });
         const torus = new THREE.Mesh(geometry, material);
-        torus.position.set(0, 2, 10);
+        torus.position.set(0, -2, -10);
 
         
 
@@ -92,6 +92,7 @@
 
         let boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);boxMesh.position.set(-2, 1, -5);
         scene.add(boxMesh);
+        scene.add(torus);
 
         // Add the Lights
         // Ambient light is used to prevent the scene
@@ -122,6 +123,7 @@
             for(let i = 0; i < boxes.length; i++) {
                 boxes[i].rotateX(Math.PI/(100+i));
             }
+            torus.rotateX(Math.PI/(100));
             requestAnimationFrame( animate );
             renderer.render( scene, camera );}
 
